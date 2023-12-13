@@ -8,7 +8,7 @@ export function Table() {
       <thead>
         <tr className="border-b border-[#E8E8E8]">
           {tableHeader.map(({ id, content }) => (
-            <th className="w-auto py-6 text-left text-lg font-normal text-[#363636]" key={id}>
+            <th className="w-auto py-3 text-left text-lg font-normal text-[#363636]" key={id}>
               {content}
             </th>
           ))}
@@ -18,7 +18,7 @@ export function Table() {
       <tbody>
         {contacts.map(({ id, email, icon, img, name, phoneNumber, state }) => (
           <Contact.Root className="mb-3" key={id}>
-            <th className="flex items-center gap-3 py-6 ">
+            <th className="flex items-center gap-3 py-3 ">
               <Contact.CheckBox />
               <Contact.Image img={img} alt={name} />
               <Contact.Name name={name} />
