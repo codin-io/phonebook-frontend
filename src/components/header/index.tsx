@@ -4,10 +4,10 @@ import { Avatar, AvatarFallback, AvatarImage } from '@radix-ui/react-avatar'
 
 export function Header() {
   return (
-    <header className="flex h-24 w-full justify-center bg-white">
+    <header className="fixed top-0 flex h-24 w-full justify-center bg-white">
       <div
         id="container"
-        className="m-auto flex h-14 w-full max-w-[1216px] items-center justify-between px-5"
+        className="m-auto flex h-14 w-full max-w-[1222px] items-center justify-between px-5"
       >
         <div id="logo" className="flex gap-2">
           <Image src="/Notepad.svg" alt="Notepad" width={32} height={32} />
